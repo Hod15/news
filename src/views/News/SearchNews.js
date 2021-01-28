@@ -38,7 +38,6 @@ class SearchNews extends Component{
                 method: 'get',
                 url: 'everything',
                 params: {
-                  language:'fr',
                   apiKey: apiKey,
                   q: this.state.search,
                   pageSize:12,
@@ -83,7 +82,6 @@ class SearchNews extends Component{
             method: 'get',
             url: 'everything',
             params: {
-              language:'fr',
               apiKey: apiKey,
               q: this.state.search,
               pageSize:12,
@@ -119,7 +117,6 @@ class SearchNews extends Component{
           method: 'get',
           url: 'everything',
           params: {
-            language:'fr',
             apiKey: apiKey,
             q: this.state.search,
             pageSize:12,

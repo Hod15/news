@@ -60,7 +60,6 @@ class News extends Component{
       method: 'get',
       url: 'top-headlines',
       params: {
-        language:'en',
         country: this.state.country,
         apiKey: apiKey,
         category: category,
@@ -74,13 +73,6 @@ class News extends Component{
           pages: nb_page,
           articles: response.data.articles,
           status: response.status
-        }
-      })
-    })
-    .catch((error) => {
-      this.setState((state) => {
-        return {
-          status : error
         }
       })
     })
@@ -110,7 +102,6 @@ class News extends Component{
       method: 'get',
       url: 'top-headlines',
       params: {
-        language:'en',
         country: event.target.value,
         apiKey: apiKey,
         category: this.state.category,
@@ -124,13 +115,6 @@ class News extends Component{
           pages: nb_page,
           articles: response.data.articles,
           status: response.status
-        }
-      })
-    })
-    .catch((error) => {
-      this.setState((state) => {
-        return {
-          status : error
         }
       })
     })
@@ -166,13 +150,6 @@ class News extends Component{
             status: response.status
           }
         })
-    })
-    .catch((error) => {
-      this.setState((state) => {
-        return {
-          status : error
-        }
-      })
     })
   }
 
