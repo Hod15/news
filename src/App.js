@@ -6,8 +6,7 @@ import News from './views/News/News'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect
+  Route
 } from "react-router-dom";
 import Error from './views/Errors/Error';
 import SearchNews from './views/News/SearchNews';

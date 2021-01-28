@@ -32,7 +32,7 @@ const NewsCard = ({ article }) => {
             rel="noopener noreferrer"
             className="cursor-pointer mb-3 flex flex-col md:shadow-none shadow-md rounded-sm md:hover:shadow-xl transition-shadow duration-400 pb-2"
         >
-            { (article.urlToImage) ?<img className="w-full h-52" src={article.urlToImage} alt={article.title} /> : <div className="w-full h-72 flex justify-center bg-gray-200"><img className="h-20 w-20 self-center" src="https://img.icons8.com/dotty/80/000000/no-image.png" alt={`no ${article.title} image`} /></div> }
+            { (article.urlToImage) ?<img className="w-full h-52" src={article.urlToImage} alt={article.title} /> : <div className="w-full h-72 flex justify-center bg-gray-200"><img className="h-20 w-20 self-center" src="https://img.icons8.com/dotty/80/000000/no-image.png" alt={`no ${article.title} file`} /></div> }
             <div className="px-4 flex flex-col h-full">
                 <span className="underline hover:no-underline mt-2 text-news font-medium mt-3 mb-3">
                     {article.title}

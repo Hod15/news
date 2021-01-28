@@ -25,7 +25,7 @@ const Error = ({ status }) => (
                 <p className="font-light text-2xl text-news mt-6 mb-6">500 Something went wrong, Please try later</p>
             }
             { (typeof(status) === 'object') &&
-                <p className="font-light text-2xl text-news mt-6 mb-6">You do not have connection, <a className="underline hover:text-blue-300" onClick={(event) => {event.preventDefault();window.location.reload()}} href="null">refresh</a></p>
+                <p className="font-light text-2xl text-news mt-6 mb-6">You do not have connection, <button className="underline hover:text-blue-300" onClick={(event) => {event.preventDefault();window.location.reload()}} >refresh</button></p>
             }
         </div>
 )
